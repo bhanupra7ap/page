@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(117deg, #98369C 0.33%, #7C00CF 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px 5px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.data-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px;
+    width: 100%;
+    max-width: 1700px;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 25px;
+    border: 1px solid #000;
+    background: #383434;
+    box-shadow: 5px 10px 8px 4px rgba(0, 0, 0, 0.25);
+    width: 670px;
+    height: 400px;
+    flex-shrink: 0;
+    align-content: flex-start;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.data-table {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    max-width: 670px;
+    align-self: center;
+}
+
+.table {
+    width: 80%;
+    max-width: 670px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.table tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}

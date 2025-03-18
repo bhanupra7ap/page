@@ -1,0 +1,94 @@
+.home {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(117deg, #98369C 0%, #7C00CF 100%);
+    padding: 10px 5px;
+    min-height: 100vh; /* Ensure the background covers the whole page */
+    background-color: #f0f0f0;
+    overflow: auto;
+  }
+  
+  .navbar {
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    height: 8vh;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #383434;
+    box-shadow: 5px 10px 8px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Ensure buttons are aligned to the right */
+  }
+  
+  .navbar-left .nav-button {
+    width: 120px;
+    height: 55px;
+    padding-right: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #D9D9D9;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  .navbar-right .nav-button,
+  .navbar-right .settings-button {
+    width: 120px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #D9D9D9;
+  }
+  
+  .navbar-right .settings-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove padding to fit the icon */
+    width: 55px; /* Make it circular */
+    height: 55px; /* Make it circular */
+    border-radius: 50%; /* Make it circular */
+    background: #D9D9D9; /* Set background color to grey */
+    color: black; /* Ensure the icon is black */
+    position: relative; /* Ensure the icon is brought to the front */
+  }
+  
+  .navbar-right .settings-button i {
+    font-size: 30px; /* Adjust icon size */
+  }
+  
+  .navbar-left .nav-button:hover,
+  .navbar-right .nav-button:hover,
+  .navbar-right .settings-button:hover {
+    background-color: rgb(163, 161, 163);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+.big-card {
+    width: calc(100% - 5px); /* Ensure width matches navbar */
+    height: 377.645px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #A6A6A6;
+    box-shadow: 5px 10px 8px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px; /* Add gap between bigger card and smaller cards */
+}
+
+.small-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-card {
+    width: 682.958px;
+    height: 431.466px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #443E3E;
+    box-shadow: 5px 10px 8px 4px rgba(0, 0, 0, 0.25);
+}
